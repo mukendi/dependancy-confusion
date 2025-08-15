@@ -1,9 +1,8 @@
 // Importer Express
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 443;
 
-// Middleware pour parser le JSON reçu dans le corps de la requête
 app.use(express.json());
 
 // Route GET
@@ -24,5 +23,5 @@ app.get('/api/data', (req, res) => {
 
 // Démarrer le serveur
 app.listen(PORT, () => {
-    console.log(` Serveur démarré sur http://localhost:${PORT}`);
+    console.log(` Serveur démarré sur https://app-d2b7f9b1-5343-4605-9a68-f61fc68c4471.cleverapps.io/:${PORT}`);
 });
